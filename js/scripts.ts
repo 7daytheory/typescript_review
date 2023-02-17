@@ -27,3 +27,8 @@ Compilation (Browsers don't understand typescript yet)
 */
 
 console.log('testing');
+
+//Shows error
+let age: number = 20;
+ //age = "a"; shows error
+age = 25;

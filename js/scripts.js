@@ -25,3 +25,7 @@ Compilation (Browsers don't understand typescript yet)
 
 */
 console.log('testing');
+//Shows error
+var age = 20;
+//age = "a"; shows error
+age = 25;
