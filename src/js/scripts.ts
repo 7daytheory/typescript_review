@@ -32,3 +32,14 @@ console.log('testing');
 let age: number = 20;
  //age = "a"; shows error
 age = 25;
+
+if(age < 50) {
+age = age + 10;
+}
+
+console.log(age);
+
+//testing
+
+
+

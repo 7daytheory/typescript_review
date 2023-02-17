@@ -4,3 +4,4 @@
 
 <h3>Check Typescript installation/version</h3>
 <code>tsc -v</code>
+
