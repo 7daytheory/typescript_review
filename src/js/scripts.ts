@@ -26,18 +26,26 @@ Compilation (Browsers don't understand typescript yet)
 
 */
 
-console.log('testing');
-
 //Shows error
-let age: number = 20;
- //age = "a"; shows error
-age = 25;
+//let sales: number = 123_424_125;
+let sales = 123_424_125; // knows its a number
+//let code: string = "Typescript";
+let code = "Typescript"; // knows its a string
+let is_published: boolean = true;
+let level; // type any (no predefined type)
+level = 1;
+level = "a";
 
-if(age < 50) {
-age = age + 10;
+function render(document: any) {
+    console.log(document);
 }
 
-console.log(age);
+//tsconfig - changed noImplicityAny to false
+//function render(document: any) {
+//     console.log(document);
+// }
+
+
 
 //testing
 
