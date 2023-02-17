@@ -9,3 +9,19 @@ let number = 10;
 number = "a"; // No Error - determines variable type at runtime
 Math.round(number) // Would then cause an error since the number is now a string
 
+//Typescript
+let x; number = 10;
+x = "a"; // Typescript would catch this error
+
+//Javascript with Typescript Benefits
+Static Typing
+Code Completion
+Refactoring
+Shorthand Notations
+
+//Drawbacks with Typescript
+Compilation (Browsers don't understand typescript yet)
+    -Transpilation => .ts -> Compiler -> .js
+
+
+*/
