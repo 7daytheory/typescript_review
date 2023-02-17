@@ -1,4 +1,5 @@
 //Custom Js
+
 /* Statically Typed (C++ , C+ , Java)
 int number = 10;
 number = "a"; Causes Error obviously
@@ -24,4 +25,5 @@ Compilation (Browsers don't understand typescript yet)
 
 
 */
+
 console.log('testing');
