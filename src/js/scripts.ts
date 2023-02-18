@@ -45,9 +45,17 @@ function render(document: any) {
 //     console.log(document);
 // }
 
+/**************** Arrays *******************/
+
+//JS array
+let numbers_js = [1, 2, 3, 'a']; //can include strings with numbers in array 
+
+//TS Array
+let numbers: number[] = [1, 2, 3, 4]; // number array, error if non integer is in array
+
+//numbers.forEach(n => n.toExponential) // n. -> will display code hints - example here toExponential
 
 
-//testing
-
+/*********** Tuples ************/
 
 
