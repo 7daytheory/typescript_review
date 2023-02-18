@@ -96,5 +96,23 @@ let myNewSize: newSize = newSize.Medium;
 //console.log(myNewSize);
 //# sourceMappingURL=scripts.js.map
 
+/************** Functions ****************/
 
-console.log(mySize);
+function CalculateTax(income: number): any {
+    //return 'a'; automatically get error bc string not a number
+    if(income < 50_000)
+    return income * 1.2;
+    //returns undefined by default - so getting error message if you have number where any is assigned currently
+}
+
+//Assigning number value - as long as a number will be returned no matter what - taxYear isn't required bc it's given a default of 2022
+function CalculateTax2(income: number, taxYear = 2022): number {
+    if(taxYear < 2022)
+    return income * 1.2;
+    return income * 1.3;
+}
+
+//Since taxYear is optional (taxYear?) - won't cause error if you don't send value
+CalculateTax2(10_000);
+
+//function CalculateTax2(income: number, taxYear?: number): number { }  - Makes taxYear optional and will be undefined
