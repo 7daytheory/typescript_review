@@ -12,5 +12,7 @@ let numbers_js = [1, 2, 3, 'a'];
 let numbers = [1, 2, 3, 4];
 let user = [1, "Mosh", true, 1];
 user.push(1);
-console.log(user);
+;
+let mySize = 2;
+console.log(mySize);
 //# sourceMappingURL=scripts.js.map
