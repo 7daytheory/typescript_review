@@ -66,5 +66,35 @@ let user: [number, string, boolean, number] = [1, "Mosh", true, 1]; //Lets array
 
 user.push(1); // This will still work and not cause an error even though we don't identify type
 
-console.log(user);
+//console.log(user);
 
+/************** Enums ***************/
+// const small = 1;
+// const medium = 2;
+// const large = 3;
+
+//PascalCase
+enum Size { Small = 1, Medium, Large };
+let mySize: Size = Size.Medium;
+ 
+/* Creates this code as output
+var Size;
+(function (Size) {
+    Size[Size["Small"] = 1] = "Small";
+    Size[Size["Medium"] = 2] = "Medium";
+    Size[Size["Large"] = 3] = "Large";
+})(Size || (Size = {}));
+;
+*/
+
+//const enum [var] outputs cleaner code
+const enum newSize { Small = 1, Medium, Large };
+let myNewSize: newSize = newSize.Medium;
+
+//Outputs optimized code :
+//let myNewSize = 2;
+//console.log(myNewSize);
+//# sourceMappingURL=scripts.js.map
+
+
+console.log(mySize);
