@@ -116,3 +116,20 @@ function CalculateTax2(income: number, taxYear = 2022): number {
 CalculateTax2(10_000);
 
 //function CalculateTax2(income: number, taxYear?: number): number { }  - Makes taxYear optional and will be undefined
+
+/********************** Objects *****************/
+
+//You can make name optional - but doesn't make sense so set it to '' to avoid error
+let employee: {
+readonly id: number,
+name: string,
+retire: (date: Date) => void
+} = {id: 1, 
+    name: '',
+    retire: (date: Date) => {
+        console.log(date)
+    }
+};
+employee.name = "Matt";
+
+//employee.id = 0; readonly makes this value not editable
