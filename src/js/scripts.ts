@@ -57,5 +57,14 @@ let numbers: number[] = [1, 2, 3, 4]; // number array, error if non integer is i
 
 
 /*********** Tuples ************/
+// 1, Mosh
+let user: [number, string, boolean, number] = [1, "Mosh", true, 1]; //Lets array know to expect 1 number and 1 string
 
+//let userFail: [number, string] = [1, "Mosh", 2, 'fail']; // too many values - error
+
+//let userFail2: [string, number] = [1, 'String']; //Expecting String and then a number - order matters 
+
+user.push(1); // This will still work and not cause an error even though we don't identify type
+
+console.log(user);
 
