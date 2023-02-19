@@ -165,3 +165,22 @@ let employee: Employee = {id: 1,
 
     kgToLbs(10);
     kgToLbs('10kg');
+
+    /********** Intersection Types ***********/
+
+    //All intersection types
+    type Draggable = {
+        drag: () => void
+    }
+
+    type Resizable = {
+        resize: () => void
+    }
+
+    //new intersection types that's draggable and resizable
+    type UIWidget = Draggable & Resizable;
+
+    let textBox: UIWidget = {
+        drag: () => {},
+        resize: () => {}
+    }
