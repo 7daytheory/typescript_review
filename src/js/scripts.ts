@@ -194,3 +194,14 @@ let employee: Employee = {id: 1,
 
     type Metric = "cm" | "inch";
 
+    /************** Nullable types ********/
+
+    //Add null type to pass null values
+    function greet(name: string | null) {
+        if(name)
+        console.log(name.toUpperCase());
+        else
+        console.log('Hello');
+    }
+
+    greet(null); //ts compiler stops from null values
