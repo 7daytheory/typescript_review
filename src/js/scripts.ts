@@ -151,3 +151,17 @@ let employee: Employee = {id: 1,
         }
     };
     employee.name = "Matt";
+
+    /***************** Union Types *************/
+
+    //Give a var or function paramter more than 1 type
+
+    function kgToLbs(weight:number | string): number {
+        if(typeof weight === 'number') 
+            return weight * 2.2;
+            else
+            return parseInt(weight) * 2.2;
+    }
+
+    kgToLbs(10);
+    kgToLbs('10kg');
