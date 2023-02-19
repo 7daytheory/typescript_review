@@ -120,16 +120,34 @@ CalculateTax2(10_000);
 /********************** Objects *****************/
 
 //You can make name optional - but doesn't make sense so set it to '' to avoid error
-let employee: {
-readonly id: number,
-name: string,
-retire: (date: Date) => void
-} = {id: 1, 
-    name: '',
-    retire: (date: Date) => {
-        console.log(date)
-    }
-};
-employee.name = "Matt";
+// let employee: {
+// readonly id: number,
+// name: string,
+// retire: (date: Date) => void
+// } = {id: 1, 
+//     name: '',
+//     retire: (date: Date) => {
+//         console.log(date)
+//     }
+// };
+// employee.name = "Matt";
 
 //employee.id = 0; readonly makes this value not editable
+
+/******************* Advanced Types *************/
+
+type Employee = {
+    readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+}
+
+//Unlike in previous section - define an object (Employee) with all the predfined types and call the Employee
+//Much cleaner also
+let employee: Employee = {id: 1, 
+        name: '',
+        retire: (date: Date) => {
+            console.log(date)
+        }
+    };
+    employee.name = "Matt";
