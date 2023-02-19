@@ -184,3 +184,13 @@ let employee: Employee = {id: 1,
         drag: () => {},
         resize: () => {}
     }
+
+    /************* Literal Types ************/
+    //Literal (exact, specific)
+    //let quantity = 50; // it can ONLY be set to 50
+ 
+    type Quantity = 50 | 100;
+    let quantity: Quantity = 100;
+
+    type Metric = "cm" | "inch";
+
